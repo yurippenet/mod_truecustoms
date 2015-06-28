@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="site"
+	method="upgrade">
+	<name>True Customs</name>
+	<author>Kristian Gausel</author>
+    <creationDate>June 2015</creationDate>
+    <copyright>Copyright (C) 2015 Atom IT</copyright>
+    <license></license>
+    <authorEmail>yurippenet@gmail.com</authorEmail>
+    <authorUrl>atom-it.dk</authorUrl>
+    <version>0.1</version>
+    <description>Truely custom html</description>
+	<files>
+		<filename module="mod_truecustoms">mod_truecustoms.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>		
+		<filename>mod_truecustoms.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="rawhtml"
+					type="textarea"
+					label="Custom HTML"
+					description="Raw HTML to display" 
+					filter="raw" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
